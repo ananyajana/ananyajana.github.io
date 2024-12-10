@@ -49,39 +49,11 @@
             font-weight: bold;
         }
    
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.8;
-        }
-        .publication-list {
-            counter-reset: list-counter;
-        }
-        .publication-list li {
-            list-style: none;
-            margin-bottom: 15px;
-            position: relative;
-            padding-left: 30px;
-        }
-        .publication-list li::before {
-            counter-increment: list-counter;
-            content: counter(list-counter) ".";
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-        .title {
-            font-weight: bold;
-        }
-        .highlight {
-            color: green;
-            font-weight: bold;
-        }
     </style>
 
 </head>
 
-<body>
+<body style="background-color: white;">
 
  <div class="tab-container">
         <a href="index.html" class="tab active">Home</a>
