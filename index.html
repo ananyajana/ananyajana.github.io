@@ -48,6 +48,35 @@
             background-color: #ddd;
             font-weight: bold;
         }
+   
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.8;
+        }
+        .publication-list {
+            counter-reset: list-counter;
+        }
+        .publication-list li {
+            list-style: none;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+        }
+        .publication-list li::before {
+            counter-increment: list-counter;
+            content: counter(list-counter) ".";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .title {
+            font-weight: bold;
+        }
+        .highlight {
+            color: green;
+            font-weight: bold;
+        }
     </style>
 
 </head>
@@ -57,7 +86,7 @@
  <div class="tab-container">
         <a href="index.html" class="tab active">Home</a>
         <a href="teaching.html" class="tab">Teaching</a>
-        <a href="page2.html" class="tab">Research</a>
+        <a href="publication.html" class="tab">Publication</a>
     </div>
 
   <div class="container">
